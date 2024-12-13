@@ -1,0 +1,118 @@
+
+.header{
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100% ;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor:pointer;
+    position:sticky;
+    background-color:white;
+    
+    
+}
+.logo img{
+    width: 120px;
+}
+.navbar a{
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(136, 13, 17);
+    margin-left: 30px;
+
+    text-decoration: none;
+}
+.navbar  a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: hsl(0, 50%, 40%);
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+h1{
+    font-size: 50px;
+    font-family:"Brilliant Cut Pro", Verdana, sans-serif;
+
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    min-height:100vh ;
+    background: white;
+    flex-direction:row
+
+}
+section .animation{
+    opacity: 0 ;
+    filter: blur(5px);
+    transition: 1s;
+}
+section.show-animate .animation{
+    opacity: 1 ;
+
+    filter: blur(0);
+
+}
+.sec1 .animation{
+    transform:translateX(-100%);
+}
+.sec1.show-animate .animation{
+    transform:translateX(0);
+}
+
+.sec2 .animation{
+    transform:translateX(-100%);
+}
+.sec2.show-animate .animation{
+    transform:translateX(0);
+}
+.sec3 .animation{
+    transform:scale(.7);
+}
+.sec3.show-animate .animation{
+    transform:scale(1);
+}
+.sec4 .animation{
+    transform:translateX(-100%);
+}
+.sec4.show-animate .animation{
+    transform:translateX(0);
+}
+.sec5 .animation{
+    transform:translateX(-100%);
+}
+.sec5.show-animate .animation{
+    transform:translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
